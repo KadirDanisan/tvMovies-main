@@ -1,0 +1,45 @@
+
+.navbar{
+    background-color: #101115 !important;
+    padding: 20px 0px;
+    position: fixed !important;
+    z-index: 999;
+    width: 100vw;
+    .container{
+       .navbar-brand{
+        .img-1{
+            width: 160px;
+            height: 52px;
+        }
+       }
+       form{
+        .search-container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            .form-input{
+                background-color: #313036 !important;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                padding-left: 35px; /* Simge için yer açmak */
+                width: 300px;
+                &:hover{
+                    border: 3px solid #717173; 
+                }
+                &:focus{
+                    border: 2px solid #fff !important;
+                }
+            }
+            .search-icon{
+                position: absolute;
+                left: 10px; /* İkonun inputun içinde görünmesi için ayarla */
+                pointer-events: none; /* İkonun tıklanabilir olmasını istemiyorsanız */
+                &:focus{
+                    display: none !important;
+                }
+            }
+        }
+       }
+    }
+}

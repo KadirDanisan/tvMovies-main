@@ -1,0 +1,40 @@
+
+.list-pages{
+    padding-top: 100px;
+    .cards-list{
+    position: relative;
+    top:100px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+    .h1-title {
+        font-size: 56px;
+        font-weight: 700;
+        padding-bottom: 20px;
+        color: white;
+    }
+    .h1-red{
+        color: red;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .card-movie {
+        color: white;
+        padding-right: 25px;
+        .card-movie-img {
+            height: 300px;
+            border-radius: 15px;
+        }
+        .card-movie-icon {
+            width: 22px;
+            height: 22px;
+            padding-right: 5px;
+        }
+        .card-movie-date {
+            padding: 1px 4px;
+            margin-left: 25px;
+            background-color: #313037;
+            border-radius: 5px;
+        } 
+    }
+    }
+}

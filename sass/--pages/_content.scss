@@ -1,0 +1,29 @@
+.content-page{
+    padding-left: 300px !important;
+    padding-top: 150px !important;
+    color: #ffffff;
+    .content-img{
+        width: 300px;
+        height: 400px;
+        border-radius: 20px;
+    }
+   .col-6{
+    padding-left: 50px;
+    h1{
+        font-size: 56px;
+    }
+    .card-movie-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .d-flex{
+        color: #ffffff76;
+    }
+    .type{
+        color: #ffffff76; 
+    }
+   }
+}
+.row{
+   --bs-gutter-x: 0rem !important;
+}

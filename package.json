@@ -1,0 +1,17 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

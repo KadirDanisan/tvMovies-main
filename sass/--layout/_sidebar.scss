@@ -1,0 +1,58 @@
+.sidebar{
+    position: fixed;
+    top:110px;
+    width: 250px !important;
+    height: 100vh !important;
+    background-color: #101115 !important;
+    overflow-y:auto;
+    z-index: 1;
+    padding-bottom: 150px !important;
+    .genre{
+        list-style: none;
+        text-decoration: none !important;
+        font-size: 25px;
+        font-weight: 400;
+        color: #5c5b58;
+        padding-left: 70px;
+        padding-top: 35px;
+    }
+    .movies-list{
+        padding-left: 70px;
+        padding-top: 35px;
+        a{
+            list-style: none;
+            text-decoration: none !important;
+            font-size: 25px;
+            font-weight: 400;
+            color: #5c5b58;
+            &:hover{
+                color:  #e6f2fa;
+            }
+        }
+    }
+    .movies-laguage{
+        padding-left: 70px;
+        padding-top: 35px;
+       li{
+        list-style: none;
+        text-decoration: none !important;
+        font-size: 25px;
+        font-weight: 400;
+        color: #5c5b58;
+        &:hover{
+            color:  #e6f2fa;
+        }
+       }
+    }
+    .footer{
+        padding-left: 70px;
+        li{
+            list-style: none;
+            text-decoration: none !important;
+            font-size: 18px;
+            font-weight: 400;
+            color: #5c5b58;
+        }
+
+    }
+}
