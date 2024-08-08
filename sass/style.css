@@ -10,18 +10,14 @@ body {
   position: relative;
 }
 
-a {
-  text-decoration: none !important;
-}
-
 .content-page {
   padding-left: 300px !important;
   padding-top: 150px !important;
   color: #ffffff;
 }
-.content-page .content-img {
-  width: 300px;
-  height: 400px;
+.content-page img {
+  width: 300px !important;
+  height: 400px !important;
   border-radius: 20px;
 }
 .content-page .col-6 {
@@ -36,6 +32,10 @@ a {
 }
 .content-page .col-6 .d-flex {
   color: rgba(255, 255, 255, 0.462745098);
+}
+.content-page .col-6 .d-flex img {
+  width: 20px !important;
+  height: 20px !important;
 }
 .content-page .col-6 .type {
   color: rgba(255, 255, 255, 0.462745098);
@@ -54,6 +54,10 @@ a {
   padding-bottom: 50px;
   padding-left: 300px;
 }
+.list-pages .cards-list a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
 .list-pages .cards-list .h1-title {
   font-size: 56px;
   font-weight: 700;
@@ -70,7 +74,8 @@ a {
   padding-right: 25px;
 }
 .list-pages .cards-list .card-movie .card-movie-img {
-  height: 300px;
+  height: 300px !important;
+  width: 250px !important;
   border-radius: 15px;
 }
 .list-pages .cards-list .card-movie .card-movie-icon {
@@ -103,6 +108,7 @@ a {
 }
 .navbar .container form .search-container .form-input {
   background-color: #313036 !important;
+  color: #fff !important;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
@@ -209,6 +215,7 @@ a {
   padding: 0px;
 }
 .carousel .carousel-inner .carousel-item img {
+  background-color: #1a1921;
   position: relative;
   top: 100px;
   padding: 30px;
@@ -244,6 +251,10 @@ a {
   top: 100px;
   padding-left: 300px;
 }
+.weekly-trending-movies a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
 .weekly-trending-movies h1 {
   font-size: 26px;
   font-weight: 700;
@@ -253,18 +264,19 @@ a {
   color: white;
   padding-right: 25px;
 }
-.weekly-trending-movies .card-movie .card-movie-img {
-  height: 300px;
+.weekly-trending-movies .card-movie img {
+  height: 300px !important;
+  width: 250px !important;
   border-radius: 15px;
 }
-.weekly-trending-movies .card-movie .card-movie-icon {
-  width: 22px;
-  height: 22px;
+.weekly-trending-movies .card-movie .d-flex img {
+  height: 22px !important;
+  width: 22px !important;
   padding-right: 5px;
 }
 .weekly-trending-movies .card-movie .card-movie-date {
   padding: 1px 4px;
-  margin-left: 100px;
+  margin-left: 10px;
   background-color: #313037;
   border-radius: 5px;
 }
@@ -273,6 +285,10 @@ a {
   position: relative;
   top: 100px;
   padding-left: 300px;
+}
+.top-rated-movies a {
+  text-decoration: none !important;
+  color: #fff !important;
 }
 .top-rated-movies h1 {
   font-size: 26px;
@@ -283,18 +299,19 @@ a {
   color: white;
   padding-right: 25px;
 }
-.top-rated-movies .card-movie .card-movie-img {
-  height: 300px;
+.top-rated-movies .card-movie img {
+  height: 300px !important;
+  width: 250px !important;
   border-radius: 15px;
 }
-.top-rated-movies .card-movie .card-movie-icon {
-  width: 22px;
-  height: 22px;
+.top-rated-movies .card-movie .d-flex img {
+  height: 22px !important;
+  width: 22px !important;
   padding-right: 5px;
 }
 .top-rated-movies .card-movie .card-movie-date {
   padding: 1px 4px;
-  margin-left: 100px;
+  margin-left: 10px;
   background-color: #313037;
   border-radius: 5px;
 }
@@ -305,6 +322,10 @@ a {
   padding-bottom: 50px;
   padding-left: 300px;
 }
+.upcoming-movies a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
 .upcoming-movies h1 {
   font-size: 26px;
   font-weight: 700;
@@ -314,18 +335,19 @@ a {
   color: white;
   padding-right: 25px;
 }
-.upcoming-movies .card-movie .card-movie-img {
-  height: 300px;
+.upcoming-movies .card-movie img {
+  height: 300px !important;
+  width: 250px !important;
   border-radius: 15px;
 }
-.upcoming-movies .card-movie .card-movie-icon {
-  width: 22px;
-  height: 22px;
+.upcoming-movies .card-movie .d-flex img {
+  height: 22px !important;
+  width: 22px !important;
   padding-right: 5px;
 }
 .upcoming-movies .card-movie .card-movie-date {
   padding: 1px 4px;
-  margin-left: 100px;
+  margin-left: 10px;
   background-color: #313037;
   border-radius: 5px;
 }
@@ -334,6 +356,10 @@ a {
   position: relative;
   top: 100px;
   padding-left: 300px;
+}
+.you-may-also-like a {
+  text-decoration: none !important;
+  color: #fff !important;
 }
 .you-may-also-like h1 {
   font-size: 26px;
@@ -344,18 +370,19 @@ a {
   color: white;
   padding-right: 25px;
 }
-.you-may-also-like .card-movie .card-movie-img {
-  height: 300px;
+.you-may-also-like .card-movie img {
+  height: 300px !important;
+  width: 250px !important;
   border-radius: 15px;
 }
-.you-may-also-like .card-movie .card-movie-icon {
-  width: 22px;
-  height: 22px;
+.you-may-also-like .card-movie .d-flex img {
+  height: 22px !important;
+  width: 22px !important;
   padding-right: 5px;
 }
 .you-may-also-like .card-movie .card-movie-date {
   padding: 1px 4px;
-  margin-left: 100px;
+  margin-left: 10px;
   background-color: #313037;
   border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

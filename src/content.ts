@@ -1,7 +1,7 @@
 
 export class Content {
     private truncateTitle(title: string): string {
-      const maxLength = 10;
+      const maxLength = 15;
       if (title.length > maxLength) {
         return title.substring(0, maxLength) + "...";
       }
@@ -27,7 +27,7 @@ export class Content {
           result += `<div class="carousel-item active">
               <img
                 src="https://image.tmdb.org/t/p/w500/${e.backdrop_path}"
-                class="d-block w-100"
+                class="d-block"
                 alt="..."
               />
               <div class="carousel-caption d-none d-xl-block row text-start">
@@ -52,22 +52,22 @@ export class Content {
     trendingContent(param: any): void {
       const trendingMovies = document.getElementById("trending-movies");
       if (trendingMovies && param.results) {
-        
-        
         let result = "";
         param.results.forEach((e: any) => {
           result += `
-            <div class="card-movie" data-title="${e.title}">
+            <div class="card-movie">
               <img
-                src="https://image.tmdb.org/t/p/w500/${e.backdrop_path}"
-                class="card-movie-img img-fluid"
+                src="https://image.tmdb.org/t/p/w500/${e.poster_path}"
+                class="card-movie-img"
                 alt=""
               />
-              <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+              <a href="detail.html?id=${e.id}" class="movie-link">
+                <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+              </a>
               <div class="d-flex">
-                <img src="img/star.png" class="card-movie-icon" alt="" />
+                <img src="img/star.png" class="card-movie-icon" alt="" width="20px"/>
                 <span>${e.vote_average.toFixed(1)}</span>
-                <span class="card-movie-date">2020</span>
+                <span class="card-movie-date">${e.release_date}</span>
               </div>
             </div>`;
         });
@@ -83,15 +83,17 @@ export class Content {
           result += `
             <div class="card-movie" data-title="${e.title}">
               <img
-                src="https://image.tmdb.org/t/p/w500/${e.backdrop_path}"
-                class="card-movie-img img-fluid"
+                src="https://image.tmdb.org/t/p/w500/${e.poster_path}"
+                class="card-movie-img"
                 alt=""
               />
-              <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+              <a href="detail.html?id=${e.id}" class="movie-link">
+                <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+              </a>
               <div class="d-flex">
                 <img src="img/star.png" class="card-movie-icon" alt="" />
                 <span>${e.vote_average.toFixed(1)}</span>
-                <span class="card-movie-date">2020</span>
+                <span class="card-movie-date">${e.release_date}</span>
               </div>
             </div>`;
         });
@@ -107,15 +109,17 @@ export class Content {
           result += `
             <div class="card-movie" data-title="${e.title}">
               <img
-                src="https://image.tmdb.org/t/p/w500/${e.backdrop_path}"
-                class="card-movie-img img-fluid"
+                src="https://image.tmdb.org/t/p/w500/${e.poster_path}"
+                class="card-movie-img"
                 alt=""
               />
-              <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+               <a href="detail.html?id=${e.id}" class="movie-link">
+                <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+              </a>
               <div class="d-flex">
                 <img src="img/star.png" class="card-movie-icon" alt="" />
                 <span>${e.vote_average.toFixed(1)}</span>
-                <span class="card-movie-date">2020</span>
+                <span class="card-movie-date">${e.release_date}</span>
               </div>
             </div>`;
         });
@@ -131,15 +135,17 @@ export class Content {
           result += `
             <div class="card-movie" data-title="${e.title}">
               <img
-                src="https://image.tmdb.org/t/p/w500/${e.backdrop_path}"
-                class="card-movie-img img-fluid"
+                src="https://image.tmdb.org/t/p/w500/${e.poster_path}"
+                class="card-movie-img"
                 alt=""
               />
-              <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+              <a href="detail.html?id=${e.id}" class="movie-link">
+                <h4 id="movie-header">${this.truncateTitle(e.title)}</h4>
+              </a>
               <div class="d-flex">
                 <img src="img/star.png" class="card-movie-icon" alt="" />
                 <span>${e.vote_average.toFixed(1)}</span>
-                <span class="card-movie-date">2020</span>
+                <span class="card-movie-date">${e.release_date}</span>
               </div>
             </div>`;
         });

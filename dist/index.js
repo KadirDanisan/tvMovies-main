@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 import { Api } from "./api.js";
 // Content
 import { Content } from "./content.js";
-// Search
 const searchInput = document.querySelector(".form-input");
 searchInput.addEventListener("keydown", async (event) => {
     if (event.key === "Enter") {

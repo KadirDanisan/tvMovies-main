@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if(discover) content.contentMovie(discover);
   });
 });
-
 // APİ
 import { Api } from "./api.js";
 // Content
 import { Content } from "./content.js";
 
-// Search
-const searchInput = document.querySelector(".form-input") as HTMLInputElement;
+
+
+const searchInput = document.querySelector(".form-input") as HTMLInputElement; 
 searchInput.addEventListener("keydown", async (event: KeyboardEvent) => {
   if (event.key === "Enter") {
     const query: string = searchInput.value;
@@ -54,5 +54,3 @@ searchInput.addEventListener("keydown", async (event: KeyboardEvent) => {
     }
   }
 });
-
-

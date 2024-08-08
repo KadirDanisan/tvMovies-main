@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
             result += `
       <div class="card-movie" data-title="${e.title}">
           <img
-            src="https://image.tmdb.org/t/p/w500/${e.backdrop_path}"
+            src="https://image.tmdb.org/t/p/w500/${e.poster_path}"
             class="card-movie-img img-fluid"
             alt=""
           />
-          <h4 id="movie-header">${e.title}</h4>
+           <a href="detail.html?id=${e.id}" class="movie-link">
+                <h4 id="movie-header">${e.title}</h4>
+              </a>
           <div class="d-flex">
             <img src="img/star.png" class="card-movie-icon" alt="" />
             <span>${e.vote_average.toFixed(1)}</span>

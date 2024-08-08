@@ -2,9 +2,9 @@
     padding-left: 300px !important;
     padding-top: 150px !important;
     color: #ffffff;
-    .content-img{
-        width: 300px;
-        height: 400px;
+    img{
+        width: 300px !important;
+        height: 400px !important;
         border-radius: 20px;
     }
    .col-6{
@@ -18,6 +18,10 @@
     }
     .d-flex{
         color: #ffffff76;
+        img{
+            width: 20px !important;
+            height: 20px !important;
+        }
     }
     .type{
         color: #ffffff76; 

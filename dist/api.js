@@ -75,15 +75,14 @@ export class Api {
             throw error;
         }
     }
-    async clickMovie(title) {
+    async getMovieById(id) {
         try {
-            const result = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${encodeURIComponent(title)}`);
+            const result = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=d7386a44a0fc239a7739000ffd87b912`);
             const data = await result.json();
-            console.log(data);
             return data;
         }
         catch (error) {
-            console.error("Error searching for movie:", error);
+            console.error("Error fetching movie by id:", error);
             throw error;
         }
     }

@@ -2,27 +2,33 @@
     position: relative;
     top:100px;
     padding-left: 300px;
+    a{
+        text-decoration: none !important;
+        color: #fff !important;
+    }
     h1 {
         font-size: 26px;
         font-weight: 700;
         color: white;
     }
-  
     .card-movie {
         color: white;
         padding-right: 25px;
-        .card-movie-img {
-            height: 300px;
+        img {
+            height: 300px !important;
+            width: 250px !important;
             border-radius: 15px;
         }
-        .card-movie-icon {
-            width: 22px;
-            height: 22px;
-            padding-right: 5px;
+        .d-flex{
+            img{
+                height: 22px !important;
+                width: 22px !important;
+                padding-right: 5px;
+            }
         }
         .card-movie-date {
             padding: 1px 4px;
-            margin-left: 100px;
+            margin-left: 10px;
             background-color: #313037;
             border-radius: 5px;
         } 
@@ -32,6 +38,10 @@
     position: relative;
     top:100px;
     padding-left: 300px;
+    a{
+        text-decoration: none !important;
+        color: #fff !important;
+    }
     h1 {
         font-size: 26px;
         font-weight: 700;
@@ -40,18 +50,21 @@
     .card-movie {
         color: white;
         padding-right: 25px;
-        .card-movie-img {
-            height: 300px;
+        img {
+            height: 300px !important;
+            width: 250px !important;
             border-radius: 15px;
         }
-        .card-movie-icon {
-            width: 22px;
-            height: 22px;
-            padding-right: 5px;
+        .d-flex{
+            img{
+                height: 22px !important;
+                width: 22px !important;
+                padding-right: 5px;
+            }
         }
         .card-movie-date {
             padding: 1px 4px;
-            margin-left: 100px;
+            margin-left: 10px;
             background-color: #313037;
             border-radius: 5px;
         } 
@@ -62,6 +75,10 @@
     top:100px;
     padding-bottom: 50px;
     padding-left: 300px;
+    a{
+        text-decoration: none !important;
+        color: #fff !important;
+    }
     h1 {
         font-size: 26px;
         font-weight: 700;
@@ -70,18 +87,21 @@
     .card-movie {
         color: white;
         padding-right: 25px;
-        .card-movie-img {
-            height: 300px;
+        img {
+            height: 300px !important;
+            width: 250px !important;
             border-radius: 15px;
         }
-        .card-movie-icon {
-            width: 22px;
-            height: 22px;
-            padding-right: 5px;
+        .d-flex{
+            img{
+                height: 22px !important;
+                width: 22px !important;
+                padding-right: 5px;
+            }
         }
         .card-movie-date {
             padding: 1px 4px;
-            margin-left: 100px;
+            margin-left: 10px;
             background-color: #313037;
             border-radius: 5px;
         } 
@@ -91,6 +111,10 @@
     position: relative;
     top:100px;
     padding-left: 300px;
+    a{
+        text-decoration: none !important;
+        color: #fff !important;
+    }
     h1 {
         font-size: 26px;
         font-weight: 700;
@@ -100,18 +124,21 @@
     .card-movie {
         color: white;
         padding-right: 25px;
-        .card-movie-img {
-            height: 300px;
+        img {
+            height: 300px !important;
+            width: 250px !important;
             border-radius: 15px;
         }
-        .card-movie-icon {
-            width: 22px;
-            height: 22px;
-            padding-right: 5px;
+        .d-flex{
+            img{
+                height: 22px !important;
+                width: 22px !important;
+                padding-right: 5px;
+            }
         }
         .card-movie-date {
             padding: 1px 4px;
-            margin-left: 100px;
+            margin-left: 10px;
             background-color: #313037;
             border-radius: 5px;
         } 
