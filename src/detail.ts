@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       api.getMovieById(movieId)
       try {
         const movieData = await api.getMovieById(movieId);
+        console.log(movieData);
+  
         // Sayfada film başlığını ve diğer detayları göstermek için
         const movieTitleElement = document.querySelector(".movie-title") as HTMLHeadingElement;
         const movieDetailsElement = document.querySelector(".content-page");
-  
         if (movieTitleElement && movieDetailsElement) {
           // Film detaylarını işleyin ve HTML'e ekleyin
           const detailsHTML = `
