@@ -8,6 +8,7 @@
     .carousel-inner{
         .carousel-item{
             margin-bottom: 100px;
+            margin-top: 0px; 
             img{
                 width: 100%;
                 height: 600px;
@@ -16,7 +17,7 @@
         }
         .carousel-caption{
             top: 0;
-            padding-top: 100px;
+            padding-top: 50px;
             .carousel-caption-text{
                h1{
                 font-size: 64px;

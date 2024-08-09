@@ -47,11 +47,13 @@ body {
 
 .list-pages {
   padding-top: 100px;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 .list-pages .cards-list {
   position: relative;
   top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
   padding-left: 300px;
   width: 400%;
 }
@@ -222,6 +224,7 @@ body {
 }
 .carousel .carousel-inner .carousel-item {
   margin-bottom: 100px;
+  margin-top: 0px;
 }
 .carousel .carousel-inner .carousel-item img {
   width: 100%;
@@ -230,7 +233,7 @@ body {
 }
 .carousel .carousel-inner .carousel-caption {
   top: 0;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .carousel .carousel-inner .carousel-caption .carousel-caption-text h1 {
   font-size: 64px;
@@ -379,4 +382,30 @@ body {
   margin-left: 10px;
   background-color: #313037;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .carousel {
+    width: 65% !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel {
+    width: 70% !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .carousel {
+    width: 75% !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .carousel {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .carousel {
+    width: 82.5% !important;
+  }
 }/*# sourceMappingURL=style.css.map */
