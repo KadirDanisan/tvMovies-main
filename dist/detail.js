@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         api.getMovieById(movieId);
         try {
             const movieData = await api.getMovieById(movieId);
-            console.log(movieData);
             // Sayfada film başlığını ve diğer detayları göstermek için
             const movieTitleElement = document.querySelector(".movie-title");
             const movieDetailsElement = document.querySelector(".content-page");

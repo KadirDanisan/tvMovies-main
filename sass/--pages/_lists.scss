@@ -6,6 +6,7 @@
     top:100px;
     padding-bottom: 50px;
     padding-left: 300px;
+    width: 400%;
      a{
         text-decoration: none !important;
         color: #fff !important;
@@ -23,11 +24,12 @@
     }
     .card-movie {
         color: white;
-        padding-right: 25px;
-        .card-movie-img {
-            height: 300px !important;
-            width: 250px !important;
+        padding-right: 25px;  
+        width: 300px !important;
+        .card-movie-img {  
             border-radius: 15px;
+            height: 400px !important;
+            width: 300px !important;
         }
         .card-movie-icon {
             width: 22px;

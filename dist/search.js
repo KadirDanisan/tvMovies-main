@@ -36,4 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 export {};
-//# sourceMappingURL=lists.js.map
+//# sourceMappingURL=search.js.map

@@ -3,14 +3,11 @@ import { Api } from "./api.js";
 document.addEventListener('DOMContentLoaded', async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const movieId = urlParams.get('id');
-  
     if (movieId) {
       const api = new Api();
       api.getMovieById(movieId)
       try {
         const movieData = await api.getMovieById(movieId);
-        console.log(movieData);
-        
         // Sayfada film başlığını ve diğer detayları göstermek için
         const movieTitleElement = document.querySelector(".movie-title") as HTMLHeadingElement;
         const movieDetailsElement = document.querySelector(".content-page");
@@ -42,5 +39,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
       console.error("Film id bulunamadı.");
     }
-  });
+});
   

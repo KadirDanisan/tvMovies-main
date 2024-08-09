@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const query = localStorage.getItem('searchQuery');
   const parametre = JSON.parse(localStorage.getItem('searchResults') || '{}');
-
- 
   if (query) {
     h1Title.textContent = query;
 
@@ -15,9 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (listingMovies && parametre.results) {  
-    let result = "";
-    console.log(parametre.results);
-    
+    let result = "";   
     parametre.results.forEach((e: any) => {
       result += `
       <div class="card-movie" data-title="${e.title}">

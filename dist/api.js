@@ -14,7 +14,7 @@ export class Api {
     }
     async moviesListFront() {
         try {
-            const result = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${this.apiKey}`);
+            const result = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${this.apiKey}&page=3`);
             const item = await result.json();
             return item;
         }
@@ -63,11 +63,9 @@ export class Api {
         }
     }
     async searchMovie(query) {
-        console.log(query);
         try {
             const result = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=d7386a44a0fc239a7739000ffd87b912&query=${query}`);
             const data = await result.json();
-            console.log(data);
             return data;
         }
         catch (error) {

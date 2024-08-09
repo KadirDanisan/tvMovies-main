@@ -42,14 +42,14 @@ searchInput.addEventListener("keydown", async (event) => {
                 // Parametreleri URL ile aktar
                 localStorage.setItem("searchQuery", query);
                 localStorage.setItem("searchResults", JSON.stringify(parametre));
-                window.location.href = "lists.html";
+                window.location.href = "search.html";
             }
             catch (error) {
                 console.error("Error:", error);
             }
         }
         else {
-            console.error("Arama sorgusu boş olamasz");
+            console.error("Arama sorgusu boş olamaz");
         }
     }
 });

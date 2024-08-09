@@ -11,7 +11,7 @@ export class Content {
         if (moviesList && data.genres) {
             let result = "";
             data.genres.forEach((e) => {
-                result += `<a href="#!"><li>${e.name}</li></a>`;
+                result += `<a href="lists.html?id=${e.id}&name=${e.name}"><li>${e.name}</li></a>`;
             });
             moviesList.innerHTML = result;
         }
@@ -23,7 +23,7 @@ export class Content {
             item.results.forEach((e) => {
                 result += `<div class="carousel-item active">
               <img
-                src="https://image.tmdb.org/t/p/w500/${e.backdrop_path}"
+                src="https://image.tmdb.org/t/p/w1280/${e.backdrop_path}"
                 class="d-block"
                 alt="..."
               />
